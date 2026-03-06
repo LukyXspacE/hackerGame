@@ -3,4 +3,10 @@ project(hackerGame)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(hackerGame main.cpp)
+add_executable(hackerGame main.cpp
+        Command.cpp
+        Command.hpp
+        FileCommands.cpp
+        FileCommands.hpp
+        Filesystem.cpp
+        Filesystem.hpp)
