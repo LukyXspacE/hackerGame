@@ -4,6 +4,7 @@
 #include <sstream>
 
 #include "Command.hpp"
+#include "Filesystem.hpp"
 
 class Parser {
 private:
@@ -31,13 +32,20 @@ public:
 
 int main() {
 
-    std::string s = "hello world . pls split it right";
+    // ParserDemo //////////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    // std::string s = "hello world . pls split it right";
+    //
+    // Parser parser;
+    // std::vector<std::string> v = parser.parseCommand(s);
+    //
+    // for (int i = 0; i < v.size(); i++) {
+    //     std::cout << v[i] << ";" << std::endl;
+    // }
 
-    Parser parser;
-    std::vector<std::string> v = parser.parseCommand(s);
+    // Filesystem Demo /////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    Filesystem f = Filesystem();
 
-    for (int i = 0; i < v.size(); i++) {
-        std::cout << v[i] << ";" << std::endl;
-    }
     return 0;
 }

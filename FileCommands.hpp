@@ -1,8 +1,6 @@
-#ifndef HACKERGAME_FILECOMMANDS_H
-#define HACKERGAME_FILECOMMANDS_H
+#pragma once
+
 #include "Command.hpp"
 
 class CommandLs : Command {
 };
-
-#endif //HACKERGAME_FILECOMMANDS_H

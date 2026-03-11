@@ -1,6 +1,3 @@
-#ifndef HACKERGAME_COMMAND_H
-#define HACKERGAME_COMMAND_H
-
 #pragma once
 
 #include <string>
@@ -17,6 +14,3 @@ public:
 
     std::string getId();
 };
-
-
-#endif //HACKERGAME_COMMAND_H

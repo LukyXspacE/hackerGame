@@ -1,14 +1,34 @@
-#ifndef HACKERGAME_FILESYSTEM_H
-#define HACKERGAME_FILESYSTEM_H
-
 #pragma once
 
-#include <string>
 #include <vector>
+#include <string>
 
-class Filesystem {
+class FileNode {
+public:
+    std::string name;
+    FileNode* parent;
+    std::vector<FileNode>* children;
+
+    FileNode(std::string name);
+
+    void addChild(FileNode child);
+};
+
+class User {
+public:
+    std::string name;
+    FileNode* position;
 
 };
 
+class Filesystem {
+public:
+    FileNode root;
+    std::vector<FileNode> listOfNodes;
+    User user;
 
-#endif //HACKERGAME_FILESYSTEM_H
+    Filesystem();
+
+    void createFolder(std::string name);
+    
+};
