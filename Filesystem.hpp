@@ -1,5 +1,6 @@
 #pragma once
 
+#include <random>
 #include <vector>
 #include <string>
 
@@ -26,10 +27,12 @@ class Filesystem {
 public:
     FileNode root;
     std::vector<FileNode> listOfNodes;
-    User user;
+    std::vector<User> users;
 
     Filesystem();
 
     void createFolder(std::string name);
+
+    void cd(User user);
     
 };

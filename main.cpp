@@ -48,7 +48,7 @@ int main() {
     Filesystem f = Filesystem();
     f.createFolder("home");
     f.createFolder("systemFixed");
-    std::cout << f.user.ls();
+    std::cout << f.users[0].ls();
 
     return 0;
 }
