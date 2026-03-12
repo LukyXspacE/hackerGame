@@ -46,6 +46,8 @@ int main() {
     // Filesystem Demo /////////////////////////////////////////////////////////////////////////////////////////////////
     //
     Filesystem f = Filesystem();
+    f.createFolder("home");
+    std::cout << f.user.ls();
 
     return 0;
 }

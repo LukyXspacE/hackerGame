@@ -7,7 +7,7 @@ class FileNode {
 public:
     std::string name;
     FileNode* parent;
-    std::vector<FileNode>* children;
+    std::vector<FileNode> children;
 
     FileNode(std::string name);
 
@@ -19,6 +19,7 @@ public:
     std::string name;
     FileNode* position;
 
+    std::string ls();
 };
 
 class Filesystem {
