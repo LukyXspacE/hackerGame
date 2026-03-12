@@ -17,7 +17,7 @@ std::string User::ls() {
 }
 
 Filesystem::Filesystem() : root("root") {
-    user = User();
+    user.position = &root;
 }
 
 void Filesystem::createFolder(std::string name) {
