@@ -34,7 +34,7 @@ void CommandLine::findCommand(const std::vector<std::string> in) {
 std::string CommandLine::terminal() {
     std::string value;
     std::cout << "> ";
-    std::cin >> value;
+    std::getline(std::cin, value);
     return value;
 }
 

@@ -9,4 +9,6 @@ add_executable(hackerGame main.cpp
         FileCommands.cpp
         FileCommands.hpp
         Filesystem.cpp
-        Filesystem.hpp)
+        Filesystem.hpp
+        System.cpp
+        System.hpp)
