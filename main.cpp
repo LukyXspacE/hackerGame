@@ -49,6 +49,7 @@ int main() {
     f.createFolder(0,"home");
     f.createFolder(0,"systemFixed");
     std::cout << f.users[0].ls();
+
     f.cd(0, "home");
     f.createFolder(0,"usr");
     std::cout << f.users[0].ls();
