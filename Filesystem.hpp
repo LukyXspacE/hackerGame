@@ -31,8 +31,8 @@ public:
 
     Filesystem();
 
-    void createFolder(std::string name);
+    void createFolder(int userIndex, std::string name);
 
-    void cd(User user);
+    void cd(int userIndex, std::string cdValue);
     
 };

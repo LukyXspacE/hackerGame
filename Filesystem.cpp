@@ -17,12 +17,23 @@ std::string User::ls() {
 }
 
 Filesystem::Filesystem() : root("root") {
+    User u;
+    users.push_back(u);
     users[0].name = "root";
     users[0].position = &root;
 }
 
-void Filesystem::createFolder(std::string name) {
-    users[0].position->addChild(FileNode(name));
+void Filesystem::createFolder(int userIndex, std::string name) {
+    users[userIndex].position->addChild(FileNode(name));
 }
 
-void Filesystem::cd(User user) {}
+void Filesystem::cd(int userIndex, std::string cdValue) {
+    for (int i = 0; i < users[userIndex].position->children.size(); i++) {
+
+        FileNode current = users[userIndex].position->children[i];
+
+        if (current.name == cdValue) {
+            *users[userIndex].position = current;
+        }
+    }
+}
