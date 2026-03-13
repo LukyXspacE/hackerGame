@@ -34,6 +34,7 @@ void Filesystem::cd(int userIndex, std::string cdValue) {
 
         if (current.name == cdValue) {
             *users[userIndex].position = current;
+            i = users[userIndex].position->children.size() + 1;
         }
     }
 }
